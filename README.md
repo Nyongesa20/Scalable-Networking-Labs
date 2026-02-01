@@ -6,17 +6,27 @@ The transition from a small office to a large-scale enterprise requires a deep u
 
 ##Learning Path & Detailed Modules
 Each folder below contains a dedicated README.md with deep-dive documentation, topology diagrams, and verification tests.
-#ID   #Project Module               #Technical Deep Dive                                    #Status
-00   Layer 2 Basics               Switching logic, MAC tables, and collision domains.       Done
-01   DHCP & Addressing            Automated IP allocation and exclusion ranges.             Active
-02   Centralized Services          Implementing DNS, HTTP, and Email server farms.          Pending
-03   Multiple LANs                 Logical segmentation using VLANs and Trunking.           Pending
-04   Dynamic Routing               OSPF/EIGRP implementation for scalable routing.          Pending
-05   Router-on-a-Stick             Inter-VLAN routing via sub-interfaces.                   Pending
-06   High Availability             First-hop redundancy using HSRP.                         Pending
-07  Access Control                 Traffic filtering with Standard & Extended ACLs.         Pending
-08  Enterprise Hardening           Port security, SSH, and management plane safety.         Pending
-09  Capstone: Mombasa Law Court    Final Integration: A complete enterprise rollout.        Pending
+
+00   Layer 2 Basics               Switching logic, MAC tables, and collision domains.
+
+01   DHCP & Addressing            Automated IP allocation and exclusion ranges.             
+
+02   Centralized Services          Implementing DNS, HTTP, and Email server farms.          
+
+03   Multiple LANs                 Logical segmentation using VLANs and Trunking.           
+
+04   Dynamic Routing               OSPF/EIGRP implementation for scalable routing.          
+
+05   Router-on-a-Stick             Inter-VLAN routing via sub-interfaces.                   
+
+06   High Availability             First-hop redundancy using HSRP.                         
+
+07  Access Control                 Traffic filtering with Standard & Extended ACLs.         
+
+08  Enterprise Hardening           Port security, SSH, and management plane safety.         
+
+09  Capstone: Mombasa Law Court    Final Integration: A complete enterprise rollout.        
+
 
 ##Skills Demonstrated
 Core Switching: STP, VTP, EtherChannel, and VLANs.
