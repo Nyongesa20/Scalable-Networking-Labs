@@ -1,18 +1,23 @@
 ##Enterprise Networking: From First Principles
+
 A comprehensive laboratory series documenting the end-to-end design, configuration, and securing of enterprise network infrastructures. This repository serves as a technical portfolio demonstrating proficiency in Cisco IOS, network architecture, and security best practices.
 
 
 ##Project Overview
+
 The transition from a small office to a large-scale enterprise requires a deep understanding of "First Principles"—connectivity, scalability, and security. This series breaks down these complex topics into 10 progressive mini-projects, culminating in a full-scale judicial network implementation.
 
 
 ##Learning Path & Detailed Modules
 Each folder below contains a dedicated README.md with deep-dive documentation, topology diagrams, and verification tests.
 00   Layer 2 Basics               Switching logic, MAC tables, and collision domains.
-01   DHCP & Addressing            Automated IP allocation and exclusion ranges.
-02   Centralized Services          Implementing DNS, HTTP, and Email server farms.          
+
+01   DHCP & Addressing            Automated IP allocation and exclusion ranges
+
+02   Centralized Services          Implementing DNS, HTTP, and Email server farms.3
+
 03   Multiple LANs                 Logical segmentation using VLANs and Trunking.           
-04   Dynamic Routing               OSPF/EIGRP implementation for scalable routing.          
+04   Dynamic Routing               OSPF/EIGRP implementation for scalable routing.
 05   Router-on-a-Stick             Inter-VLAN routing via sub-interfaces.                   
 06   High Availability             First-hop redundancy using HSRP.                         
 07  Access Control                 Traffic filtering with Standard & Extended ACLs.         
