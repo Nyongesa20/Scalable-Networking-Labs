@@ -1,0 +1,52 @@
+# 1. Navigate to folder
+cd "A:\CyberSecurity Journey\Scalable_Networking_Labs"
+
+# 2. Initialize Git
+git init
+
+# 3. Configure Git (first time only)
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+# 4. Add remote
+git remote add origin https://github.com/Nyongesa20/Scalable-Networking-Labs.git
+
+# 5. Set branch to main
+git branch -M main
+
+# 6. Pull existing files
+git pull origin main --allow-unrelated-histories
+
+# 7. Check status
+git status
+
+# 8. Create .gitignore
+touch .gitignore
+notepad .gitignore
+# Add exclusions, save, close
+
+git add .gitignore
+git commit -m "Add .gitignore file"
+git push origin main
+
+# 9. Verify on GitHub
+# Open: https://github.com/Nyongesa20/Scalable-Networking-Labs
+
+cd "A:\CyberSecurity Journey\Scalable_Networking_Labs"
+git pull origin main
+
+# Start pushing 00-Layer2-Basics incrementally
+git add 00-Layer2-Basics/*.pkt
+git commit -m "Add Packet Tracer file for 00-Layer2-Basics"
+git push origin main
+
+# Continue with README, screenshots, configurations...
+cd "A:\CyberSecurity Journey\Scalable_Networking_Labs"
+git pull origin main
+
+# Start pushing 00-Layer2-Basics incrementally
+git add 00-Layer2-Basics/*.pkt
+git commit -m "Add Packet Tracer file for 00-Layer2-Basics"
+git push origin main
+
+# Continue with README, screenshots, configurations...
