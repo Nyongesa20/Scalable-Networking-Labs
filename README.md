@@ -8,16 +8,24 @@ The transition from a small office to a large-scale enterprise requires a deep u
 Each folder below contains a dedicated README.md with deep-dive documentation, topology diagrams, and verification tests.
 
 00   Layer 2 Basics               Switching logic, MAC tables, and collision domains.
+
 01   DHCP & Addressing             Automated IP allocation and exclusion ranges
+
 02   Centralized Services          Implementing DNS, HTTP, and Email server farms.3
+
 03   Multiple LANs                 Logical segmentation using VLANs and Trunking.           
+
 04   Routing Configurations        static and dynamic(RIP,OSPF/EIGRP)routing implementation
       v1 Static routing            the routing routes were manually configured
       v2 Dynamic routing            the routers learned about the routes on their own after configurations
 05   Router-on-a-Stick             Inter-VLAN routing via sub-interfaces.                   
+
 06   High Availability             First-hop redundancy using HSRP.                         
+
 07  Access Control                 Traffic filtering with Standard & Extended ACLs.         
+
 08  Enterprise Hardening           Port security, SSH, and management plane safety.         
+
 09  Capstone: Mombasa Law Court    Final Integration: A complete enterprise rollout
 
 ## Skills Demonstrated
