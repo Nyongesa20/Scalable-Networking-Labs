@@ -1,46 +1,28 @@
-\##Mini-project 02 centralized Services
-
-\##Objective
+# Mini-Project 02: Centralized Services
+## Objective
 To introduce centralized networkservices and understand the importance of static IP addressing for shared resources
 
-
-
-\##Topology
+## Topology
 -A Router as DHCP server
 -A layer2 Switch
 -3PCs
 -a network printer
 
--a server
-
-
-
-\##Configurations summary
-
+## Configuration Summary
 DHCP was configured to dynamically assign IP addresses to user devices.
-
 Infrastructure IPs were excluded from the DHCP pool
-
 Printer and server were assigned static IPs to ensure consistent accessibility
 
-
-
-\##Observations
-
+## Observations
 -PCs successfully accessed the printer and the server using a fixed IP
-
 -DHCP simplified user device management
-
 -IP exclusions removed IP conflicts
 
-
-
-\##Limitations
+## Limitations Identified
 -All devices reside in a single broadcast domain
--No logical separation between departments
 
-
-
-\##Conclusion
+## Conclusion
 This project demonstrates shared resources require stable addressing and highlights the need for network segmentation leading to the introduction of the multiple LANs in the next project
 
+
+\##Conclus
