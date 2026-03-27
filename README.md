@@ -6,6 +6,7 @@ The transition from a small office to a large-scale enterprise requires a deep u
 
 ## Learning Path & Detailed Modules
 Each folder below contains a dedicated README.md with deep-dive documentation, topology diagrams, and verification tests.
+
 00   Layer 2 Basics               Switching logic, MAC tables, and collision domains.
 01   DHCP & Addressing             Automated IP allocation and exclusion ranges
 02   Centralized Services          Implementing DNS, HTTP, and Email server farms.3
