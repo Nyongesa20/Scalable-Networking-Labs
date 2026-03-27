@@ -16,8 +16,11 @@ Each folder below contains a dedicated README.md with deep-dive documentation, t
 03   Multiple LANs                 Logical segmentation using VLANs and Trunking.           
 
 04   Routing Configurations        static and dynamic(RIP,OSPF/EIGRP)routing implementation
+
       v1 Static routing            the routing routes were manually configured
+      
       v2 Dynamic routing            the routers learned about the routes on their own after configurations
+      
 05   Router-on-a-Stick             Inter-VLAN routing via sub-interfaces.                   
 
 06   High Availability             First-hop redundancy using HSRP.                         
