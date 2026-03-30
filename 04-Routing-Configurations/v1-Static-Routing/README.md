@@ -1,16 +1,27 @@
-# Routing Configurations – Static Routing
+# Mini-Project 04 (v1): Static Routing
 ## Objective
-To enable communication between multiple LANs using manually
-configured static routes on routers.
+To enable communication between multiple LANs connected via different routers using static routing.
 
-## Problem Solved
-Routers were unable to communicate across networks because
-they lacked knowledge of remote network paths.
+## Topology
+2 Routers
+2 Switches
+2 LANs
+Router-to-router link
 
-## Solution
-Static routes were manually configured on each router to define
-paths to remote networks.
+## Configuration Summary
+Router interfaces were configured with IP addresses.
+Static routes were added to enable communication between networks.
 
-## Outcome
-Devices across different LANs can now communicate successfully
-through manually defined routing paths.
+## Observations
+Routers only know directly connected networks by default.
+Static routes are required for remote network communication.
+Traffic follows manually defined paths.
+
+## Limitations Identified
+Routes must be configured manually on each router.
+Not scalable for large networks.
+Changes require manual updates on all routers.
+
+## Conclusion
+Static routing works for small networks but becomes inefficient as the network grows,
+leading to the need for dynamic routing.
