@@ -1,0 +1,22 @@
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: 
+
+Press RETURN to get started!
+
+Router>enable
+Router#configure terminal
+
+Router(config)#interface gigabitethernet0/0
+Router(config-if)#ip address 10.0.0.2 255.255.255.252
+Router(config-if)#no shutdown
+
+Router(config-if)#interface gigabitethernet0/1
+Router(config-if)#ip address 10.0.0.5 255.255.255.252
+Router(config-if)#no shutdown
+
+Router(config-if)#exit
+Router(config)#router ospf 1
+Router(config-router)#network 10.0.0.0 0.0.0.3 area 0
+Router(config-router)#network 10.0.0.4 0.0.0.3 area 0
