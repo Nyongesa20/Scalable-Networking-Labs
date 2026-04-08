@@ -20,6 +20,7 @@ Each folder below contains a dedicated README.md with deep-dive documentation, t
       v1 Static routing            the routing routes were manually configured
       
       v2 Dynamic routing            the routers learned about the routes on their own after configurations
+                                    (RIP,OSPF,IS-IS protocols used)
       
 05   Router-on-a-Stick             Inter-VLAN routing via sub-interfaces.                   
 
