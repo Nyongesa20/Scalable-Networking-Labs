@@ -1,0 +1,37 @@
+Router>enable
+Router#config t
+
+Router(config)#interface g0/1.10
+Router(config-subif)#encapsulation dot1Q 10
+Router(config-subif)#ip address 192.168.110.1 255.255.255.0
+Router(config-subif)#interface g0/1.20
+Router(config-subif)#encapsulation dot1Q 20
+Router(config-subif)#ip address 192.168.120.1 255.255.255.0
+Router(config-subif)#interface g0/1.30
+Router(config-subif)#encapsulation dot1Q 30
+Router(config-subif)#ip address 192.168.130.1 255.255.255.0
+Router(config-subif)#no shutdown
+Router(config-subif)#interface g0/0
+Router(config-if)#ip address 10.0.0.5 255.255.255.252
+Router(config-if)#no shutdown
+Router(config-if)#interface g0/1
+Router(config-if)#no shutdown
+
+Router(config-if)#router ospf 1
+Router(config-router)#network 192.168.110.0 0.0.0.255 area 0
+Router(config-router)#network 192.168.120.0 0.0.0.255 area 0
+Router(config-router)#network 192.168.130.0 0.0.0.255 area 0
+Router(config-router)#network 10.0.0.4 0.0.0.3 area 0
+
+Router(config-router)#ip dhcp excluded-address 192.168.110.1 192.168.110.10
+Router(config)#ip dhcp excluded-address 192.168.120.1 192.168.120.10
+Router(config)#ip dhcp excluded-address 192.168.130.1 192.168.130.10
+Router(config)#ip dhcp pool FINANCE
+Router(dhcp-config)#network 192.168.110.1 255.255.255.0
+Router(dhcp-config)#default-router 192.168.110.1
+Router(dhcp-config)#ip dhcp pool ICT
+Router(dhcp-config)#network 192.168.120.1 255.255.255.0
+Router(dhcp-config)#default-router 192.168.120.1
+Router(dhcp-config)#ip dhcp pool HR
+Router(dhcp-config)#network 192.168.130.1 255.255.255.0
+Router(dhcp-config)#default-router 192.168.130.1
