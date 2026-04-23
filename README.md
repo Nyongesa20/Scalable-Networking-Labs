@@ -22,8 +22,10 @@ Each folder below contains a dedicated README.md with deep-dive documentation, t
       v2 Dynamic routing            the routers learned about the routes on their own after configurations
                                     (RIP,OSPF,IS-IS protocols used)
       
-05   Router-on-a-Stick             Inter-VLAN routing via sub-interfaces.      
+05   Router-on-a-Stick             Inter-VLAN routing via sub-interfaces. 
+
       v1-single-building(multi-floors)
+      
       v2-Multi-building
 
 06   High Availability             First-hop redundancy using HSRP.                         
