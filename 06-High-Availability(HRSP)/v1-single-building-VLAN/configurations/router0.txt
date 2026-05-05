@@ -1,0 +1,28 @@
+Router>enable
+Router#config t
+
+Router(config)#interface g0/0.10
+Router(config-subif)#encapsulation dot1Q 10
+Router(config-subif)#ip address 192.168.10.2 255.255.255.0
+Router(config-subif)#standby 10 ip 192.168.10.1
+Router(config-subif)#standby 10 priority 110
+Router(config-subif)#standby 10 preempt
+
+Router(config-subif)#interface g0/0.20
+Router(config-subif)#encapsulation dot1Q 20
+Router(config-subif)#ip address 192.168.20.2 255.255.255.0
+Router(config-subif)#standby 20 ip 192.168.20.1
+Router(config-subif)#standby 20 priority 110
+Router(config-subif)#standby 20 preempt
+
+Router(config-if)#interface g0/0
+Router(config-if)#shutdown
+
+Router(config-if)#ip dhcp excluded-address 192.168.10.1 192.168.10.10
+Router(config)#ip dhcp excluded-address 192.168.20.1 192.168.20.10
+Router(config)#ip dhcp pool FINANCE
+Router(dhcp-config)#network 192.168.10.1 255.255.255.0
+Router(dhcp-config)#default-router 192.168.10.1
+Router(dhcp-config)#ip dhcp pool ICT
+Router(dhcp-config)#network 192.168.20.1 255.255.255.0
+Router(dhcp-config)#default-router 192.168.20.1
